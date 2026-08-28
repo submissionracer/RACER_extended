@@ -1,0 +1,2 @@
+policy_label,gate_mode,gate_scale_mult,beta_gate_concentration,trust_scale_mult,trust_floor,trust_cap,mean_reward_pct_oracle,mean_transition_l1_error,mean_off_support_leakage,mean_top1_agreement
+tm_tw_refined_gated_offline,beta,1.0,20.0,1.0,0.1,0.95,97.41442678660545,0.069404204111585,0.0139401409422707,0.7863

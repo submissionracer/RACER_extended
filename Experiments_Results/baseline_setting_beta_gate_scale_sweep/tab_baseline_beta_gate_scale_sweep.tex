@@ -1,0 +1,25 @@
+\begin{table}[t]
+\centering
+\caption{Baseline setting beta-gate sweep without low-rank variants. Rewards are averaged over 10 seeds and reported as percent of oracle. The best beta-gated prior setting is highlighted.}
+\label{tab:baseline_beta_gate_sweep_no_lr}
+\begin{tabular}{lccccc}
+\toprule
+Method & Gate scale & Gate mode & Reward (\% oracle) & $\Delta$ vs Adaptive TW & Top-1 agree \\
+\midrule
+Adaptive TM--TW & -- & deterministic & 97.76 & +0.00 & 0.779 \\
+\addlinespace
+Gated offline prior & 0.25 & deterministic & 97.15 & -0.61 & 0.770 \\
+Gated offline prior & 0.25 & beta & 95.60 & -2.17 & 0.731 \\
+Gated offline prior & 0.5 & deterministic & 96.63 & -1.13 & 0.727 \\
+Gated offline prior & 0.5 & beta & 96.11 & -1.65 & 0.761 \\
+Gated offline prior & 1 & deterministic & 96.74 & -1.02 & 0.745 \\
+Gated offline prior & 1 & beta & \textbf{97.41} & -0.35 & 0.786 \\
+Gated offline prior & 2 & deterministic & 97.05 & -0.71 & 0.759 \\
+Gated offline prior & 2 & beta & 96.28 & -1.49 & 0.751 \\
+Gated offline prior & 4 & deterministic & 97.25 & -0.51 & 0.780 \\
+Gated offline prior & 4 & beta & 97.17 & -0.59 & 0.784 \\
+\bottomrule
+\end{tabular}
+\vspace{0.25em}
+\footnotesize{Best beta setting: gate scale 1, beta concentration 20.0; mean reward 97.41\% of oracle over 10 seeds.}
+\end{table}
