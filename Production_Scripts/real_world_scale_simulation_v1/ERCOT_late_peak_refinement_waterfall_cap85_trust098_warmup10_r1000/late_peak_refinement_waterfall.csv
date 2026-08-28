@@ -1,0 +1,4 @@
+stage,policy,avg_reward,sem_reward,output_dir,job_graph_prior_enabled,job_graph_path_weight_mode,oracle_reward,improvement,improvement_sem
+TW,TW only,31.08627079220529,0.8071295098337506,st_tw_tmtw_comparison/ERCOT_late_peak_refinement_waterfall_cap85_trust098_warmup10_r1000_s42_45/tw_(equal_weight),True,equal_uniform,31.95291640752167,0.0,0.0
+Adaptive trust,Local + Global + TW,31.705903775196447,0.5483823843413895,st_tw_tmtw_comparison/ERCOT_late_peak_refinement_waterfall_cap85_trust098_warmup10_r1000_s42_45/adaptive_tw_(equal_weight),True,equal_uniform,31.95291640752167,0.6196329829911544,0.5745831160828713
+Graph-based prior,Local + Global + TW,31.859087582170343,0.4248404028029944,st_tw_tmtw_comparison/ERCOT_late_peak_refinement_waterfall_cap85_trust098_warmup10_r1000_s42_45/graph_prior_(weight_reduction),True,reduction,32.08195760744242,0.15318380697390133,0.15316201116752
